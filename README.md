@@ -27,7 +27,7 @@ Das Sprachmodell läuft lokal, ein API-Key wird nicht benötigt.
 
 ## Funktionsweise
 
-![Architektur](docs/architektur.svg)
+![Architektur](docs/screenshots/architektur.png)
 
 Die Anwendung trennt zwei Aufgaben: Das Sprachmodell sucht und formuliert, der Server prüft. Ob ein Zitat im Gesetz steht, entscheidet nie das Modell.
 
