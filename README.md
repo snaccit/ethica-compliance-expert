@@ -100,6 +100,12 @@ Die Seite „Gesetze“ zeigt, welche Texte geladen sind, und lädt sie auf Knop
 
 *Die Bilder zeigen die Oberfläche mit einer aufgezeichneten Beispielantwort, daher sind Zeitangaben nicht aussagekräftig.*
 
+## Einordnung in ETHICA
+
+Im Pilot mit AZS soll für jede Ware im Container automatisch geprüft werden, ob das passende Zertifikat vorliegt. Der Compliance Expert liefert dafür die Gesetzesstelle und schlägt daraus Regeln vor, die ein Mensch freigibt. Grün ist, was heute läuft, gelb ist geplant.
+
+![Architektur AZS-Pilot](docs/screenshots/azs-pilot.png)
+
 ## Installation
 
 Benötigt werden [Node.js](https://nodejs.org) ab 20.12 und [Ollama](https://ollama.com).
