@@ -80,6 +80,26 @@ Aus den Rechtseinheiten wird ein Graph gebaut: Artikel und Anhänge sind Knoten,
 
 `npm run eval` stellt die Fragen aus `evals/questions.yaml` und prüft pro Frage, ob erwartete Begriffe genannt, die richtige Fundstelle zitiert oder, bei Fragen ohne Rechtsgrundlage, korrekt verweigert wird. `npm test` deckt Parser, Zitatprüfung, Antwortlogik, Fingerabdruck und Werkzeugaufrufe ab.
 
+## Oberfläche
+
+Die Seite „Fragen“ zeigt die Arbeit des Agenten live: Jeder Suchschritt erscheint sofort, und das Gesetzes-Radar färbt alle 812 Absätze nach „gefunden“, „gelesen“ und „zitiert“.
+
+![Live-Ablauf](docs/screenshots/ablauf.png)
+
+Am Ende steht die Antwort mit Status, Wissenspfad und dem Zitat im Gesetzestext. „Im Gesetz öffnen“ springt an dieselbe Stelle bei EUR-Lex.
+
+![Antwort mit geprüfter Quelle](docs/screenshots/antwort.png)
+
+Regelt das Gesetz die Frage nicht, sagt die Anwendung das und zitiert nichts Ähnliches.
+
+![Steht nicht im Gesetz](docs/screenshots/keine-quelle.png)
+
+Die Seite „Gesetze“ zeigt, welche Texte geladen sind, und lädt sie auf Knopfdruck neu.
+
+![Gesetze](docs/screenshots/gesetze.png)
+
+*Die Bilder zeigen die Oberfläche mit einer aufgezeichneten Beispielantwort, daher sind Zeitangaben nicht aussagekräftig.*
+
 ## Installation
 
 Benötigt werden [Node.js](https://nodejs.org) ab 20.12 und [Ollama](https://ollama.com).
