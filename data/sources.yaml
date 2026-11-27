@@ -1,0 +1,35 @@
+# Gesetze, die die App kennt. phase 1 = geladen und getestet, phase 2 = vorgemerkt.
+# celex: Nummer des Rechtsakts. Darüber holt `npm run ingest` den Text beim EU-Amtsblatt.
+# url:   deutsche Fassung auf EUR-Lex, für die Links "Im Gesetz öffnen".
+
+- short: BattVO
+  title: Verordnung (EU) 2023/1542 über Batterien und Altbatterien
+  celex: 32023R1542
+  url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32023R1542
+  phase: 1
+
+- short: ESPR
+  title: Verordnung (EU) 2024/1781 – Ökodesign für nachhaltige Produkte
+  celex: 32024R1781
+  url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32024R1781
+  phase: 1
+
+- short: REACH
+  title: Verordnung (EG) Nr. 1907/2006 (REACH)
+  celex: 32006R1907
+  url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32006R1907
+  phase: 2
+  note: Sehr lang. Zuerst nur Art. 33 (Informationen in der Lieferkette) und Anhang XIV/XVII-Struktur.
+
+- short: CSRD
+  title: Richtlinie (EU) 2022/2464 (CSRD)
+  celex: 32022L2464
+  url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32022L2464
+  phase: 2
+
+- short: AltfahrzeugRL
+  title: Richtlinie 2000/53/EG über Altfahrzeuge
+  celex: 32000L0053
+  url: https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32000L0053
+  phase: 2
+  note: Neue Altfahrzeug-Verordnung ist im Verfahren – Stand bei jedem Abruf prüfen.

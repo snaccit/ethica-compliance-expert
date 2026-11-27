@@ -1,0 +1,65 @@
+# Eval-Fragen – Entwurf. Erwartete Antworten sind fachlich zu prüfen (status: entwurf),
+# bevor der Score als Qualitätsnachweis gilt. Fundstellen-Absätze vor Freigabe gegen den Text prüfen.
+# check.must_include: Begriffe/Werte, die in der Antwort vorkommen müssen
+# check.must_cite: Fundstellen-Präfix, der verifiziert zitiert sein muss
+# check.must_refuse: true = Agent muss sagen, dass keine freigegebene Quelle vorliegt
+
+- id: Q01
+  frage: Fällt eine Industriebatterie mit genau 2,00 kWh unter die Batteriepass-Pflicht nach Art. 77 Abs. 1 BattVO?
+  erwartet: Nein. Erfasst sind Industriebatterien mit einer Kapazität über 2 kWh; genau 2,00 kWh liegt nicht darüber.
+  check: { must_include: ["2 kWh|2,00 kWh"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q02
+  frage: Ab wann gilt die Batteriepass-Pflicht?
+  erwartet: Ab dem 18. Februar 2027.
+  check: { must_include: ["18. Februar 2027|18.02.2027|2027-02-18"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q03
+  frage: Für welche Batteriekategorien ist ein Batteriepass vorgeschrieben?
+  erwartet: LV-Batterien (leichte Verkehrsmittel), Industriebatterien über 2 kWh, Elektrofahrzeugbatterien.
+  check: { must_include: ["Elektrofahrzeug", "Industrie", "leichte Verkehrsmittel|LV-Batterie"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q04
+  frage: Braucht eine Gerätebatterie einen Batteriepass?
+  erwartet: Nein, Gerätebatterien sind nicht in Art. 77 Abs. 1 genannt (Kennzeichnung/QR-Code-Pflichten separat prüfen).
+  check: { must_include: ["nein"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q05
+  frage: Welche Informationen muss der Batteriepass enthalten?
+  erwartet: Verweis auf Anhang XIII, mit Unterscheidung nach Zugangsebenen (öffentlich / berechtigtes Interesse / Behörden).
+  check: { must_include: ["Anhang XIII"], must_cite: "BattVO:AnhXIII" }
+  status: entwurf
+
+- id: Q06
+  frage: Wer ist für den Batteriepass verantwortlich?
+  erwartet: Der Wirtschaftsakteur, der die Batterie in Verkehr bringt.
+  check: { must_include: ["in Verkehr|Inverkehrbring"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q07
+  frage: Was passiert mit dem Batteriepass, wenn eine Batterie umgewidmet oder wiederaufbereitet wird?
+  erwartet: Es entsteht ein neuer Batteriepass für die neue Batterie, verknüpft mit dem Pass der ursprünglichen Batterie.
+  check: { must_include: ["neu"], must_cite: "BattVO:Art77" }
+  status: entwurf
+
+- id: Q08
+  frage: Wie wird der Batteriepass für Nutzer zugänglich gemacht?
+  erwartet: Über einen QR-Code auf der Batterie, der zum eindeutigen Kennzeichen führt.
+  check: { must_include: ["QR"], must_cite: "BattVO:" }
+  status: entwurf
+
+- id: Q09
+  frage: Welches Bußgeld droht in Deutschland bei einem fehlenden Batteriepass?
+  erwartet: Kein Betrag aus den EU-Texten ableitbar; Mitgliedstaaten legen Sanktionen fest (Art. 93 BattVO). Agent nennt nationales Recht als fehlende Quelle und erfindet keinen Betrag.
+  check: { must_refuse: true }
+  status: entwurf
+
+- id: Q10
+  frage: Gilt der Batteriepass auch für Starterbatterien (SLI)?
+  erwartet: Nein, SLI-Batterien sind nicht in Art. 77 Abs. 1 genannt.
+  check: { must_include: ["nein"], must_cite: "BattVO:Art77" }
+  status: entwurf

@@ -1,0 +1,24 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# lokale Einstellungen und Schlüssel
+.env*
+!.env.example
+
+# entsteht beim Benutzen der App
+data/answers.jsonl
+data/cache.json
+data/evals.json
+data/*.old.json
+data/*.prev.json
+
+# interne Projektunterlagen bleiben lokal
+docs/*.pdf
+docs/*.png
+docs/*.txt
+!docs/screenshots/
+
+.DS_Store
+Thumbs.db
